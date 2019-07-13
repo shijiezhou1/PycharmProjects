@@ -15,7 +15,7 @@ class GuessGame:
 
 
 def main():
-    randomnumber = GuessGame(1, 3);
+    randomnumber = GuessGame(1, 100);
     randomnumber = randomnumber.randomnum
     found = False  # flag variable to see
 
