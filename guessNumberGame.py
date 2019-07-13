@@ -1,8 +1,22 @@
 import random
 
+
+class GuessGame:
+
+    def __init__(self, min, max):
+        self.showGameRule(min, max)
+        self.randomnum = random.randint(min, max)
+
+    def showGameRule(self, min, max):
+        print("Guess number between " + str(min) +  " - " + str(max))
+
+    # def randomnumbergenerator(self):
+    # return random.randint(1, 100)
+
+
 def main():
-    print("guess between 1-100")
-    randomnumber = random.randint(1, 100);
+    randomnumber = GuessGame(1, 3);
+    randomnumber = randomnumber.randomnum
     found = False  # flag variable to see
 
     while not found:
